@@ -1,0 +1,3 @@
+[flake8]
+select = E3, E4, F
+per-file-ignores = fuse/core.py:E402, fuse/installer.py:E402
