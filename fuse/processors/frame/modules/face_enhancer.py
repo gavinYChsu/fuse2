@@ -40,7 +40,7 @@ MODELS : Dict[str, ModelValue] =\
 	{
 		#'url': 'https://github.com/fuse/fuse-assets/releases/download/models/GFPGANv1.4.onnx',
 		#'url': 'https://github.com/fuse/fuse-assets/releases/download/models/gfpgan_1.4.onnx',
-		'url': 'https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/gfpgan_1.4.onnx'
+		'url': 'https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/gfpgan_1.4.onnx',
 		#'path': resolve_relative_path('../.assets/models/GFPGANv1.4.onnx')
 		'path': resolve_relative_path('../.assets/models/gfpgan_1.4.onnx')
 	},
