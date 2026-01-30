@@ -22,7 +22,8 @@ MODELS : Dict[str, ModelValue] =\
 {
 	'inswapper_128':
 	{
-		'url': 'https://github.com/fuse/fuse-assets/releases/download/models/inswapper_128.onnx',
+		#'url': 'https://github.com/fuse/fuse-assets/releases/download/models/inswapper_128.onnx',
+		'url': 'https://github.com/facefusion/facefusion-assets/releases/download/models-3.0.0/inswapper_128.onnx'
 		'path': resolve_relative_path('../.assets/models/inswapper_128.onnx')
 	},
 	'inswapper_128_fp16':
