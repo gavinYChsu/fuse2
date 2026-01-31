@@ -30,6 +30,14 @@ Build for Linux
 3. Select the "Build Linux Executable" workflow.
 4. Download the `fuse_linux_executable` artifact from the completed run.
 
+### Using Google Colab (Easiest for Web Users)
+If you don't use GitHub Actions or Docker, you can build on Google Colab:
+
+1. Download the `build_on_colab.ipynb` file from this repository.
+2. Go to [Google Colab](https://colab.research.google.com/).
+3. Upload the notebook (File -> Upload notebook).
+4. Run the cells in order. The last cell will download the `fuse_linux` executable to your computer.
+
 ### Using Docker
 If you have Docker installed, you can build the Linux executable locally:
 
