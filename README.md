@@ -38,7 +38,8 @@ If you don't use GitHub Actions or Docker, you can build on Google Colab:
 3. Upload the notebook (File -> Upload notebook).
 4. Run the cells in order.
    - **Important**: In Step 2, select `cpu` or `cuda` from the dropdown menu.
-   - The last cell will download the executable (`fuse_linux_cpu` or `fuse_linux_cuda`).
+   - The notebook also includes steps to **run the executable** directly in Colab for testing.
+   - The cell Step 4 will download the executable (`fuse_linux_cpu` or `fuse_linux_cuda`).
 
 ### Using Docker
 If you have Docker installed, you can build the Linux executable locally:
