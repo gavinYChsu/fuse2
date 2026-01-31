@@ -36,7 +36,9 @@ If you don't use GitHub Actions or Docker, you can build on Google Colab:
 1. Download the `build_on_colab.ipynb` file from this repository.
 2. Go to [Google Colab](https://colab.research.google.com/).
 3. Upload the notebook (File -> Upload notebook).
-4. Run the cells in order. The last cell will download the `fuse_linux` executable to your computer.
+4. Run the cells in order.
+   - **Important**: In Step 2, select `cpu` or `cuda` from the dropdown menu.
+   - The last cell will download the executable (`fuse_linux_cpu` or `fuse_linux_cuda`).
 
 ### Using Docker
 If you have Docker installed, you can build the Linux executable locally:

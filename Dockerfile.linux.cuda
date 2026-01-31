@@ -1,0 +1,25 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Install system dependencies required for opencv and insightface
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first to leverage cache
+COPY requirements-cuda.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements-cuda.txt && \
+    pip install pyinstaller
+
+# Copy the rest of the application
+COPY . .
+
+# Build command (default)
+CMD ["pyinstaller", "--name", "fuse_linux_cuda", "--onefile", "--clean", "--add-data", "fuse:fuse", "run.py"]
