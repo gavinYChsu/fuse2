@@ -21,6 +21,29 @@ Be aware, the installation needs technical skills and is not for beginners. Plea
 Read the [installation](https://docs.fuse.io/installation) now.
 
 
+Build for Linux
+---------------
+
+### Using GitHub Actions (Recommended)
+1. Fork or push this repository to GitHub.
+2. Go to the "Actions" tab.
+3. Select the "Build Linux Executable" workflow.
+4. Download the `fuse_linux_executable` artifact from the completed run.
+
+### Using Docker
+If you have Docker installed, you can build the Linux executable locally:
+
+1. Build the image: `docker build -f Dockerfile.linux -t fuse-linux-builder .`
+2. Create container: `docker create --name fuse_temp fuse-linux-builder`
+3. Copy executable: `docker cp fuse_temp:/app/dist/fuse_linux ./fuse_linux`
+4. Clean up: `docker rm fuse_temp`
+
+Or simply run the provided script on Windows:
+```cmd
+build_linux_docker.bat
+```
+
+
 Usage
 -----
 
